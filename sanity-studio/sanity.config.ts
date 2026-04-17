@@ -5,6 +5,7 @@ import { schemaTypes } from './schemaTypes'
 import { codeInput } from '@sanity/code-input'
 import { hierarchicalDocumentList, hierarchyTree } from '@sanity/hierarchical-document-list'
 import { myStructure } from './deskStructure'
+import { colorInput } from '@sanity/color-input'
 
 export default defineConfig({
   name: 'default',
@@ -19,7 +20,8 @@ export default defineConfig({
     }), 
     visionTool(), 
     codeInput(),
-    hierarchicalDocumentList()
+    hierarchicalDocumentList(),
+    colorInput()
   ],
 
   schema: {

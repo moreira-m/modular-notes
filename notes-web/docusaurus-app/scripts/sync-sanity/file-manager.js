@@ -9,7 +9,7 @@ function resetDirectory(dirPath) {
 }
 
 function createFolder(basePath, folderName) {
-  const formattedName = folderName.replace(/[^a-zA-Z0-9-]/g, '-').toLowerCase();
+  const formattedName = folderName.replace(/[^a-zA-Z0-9-]/g, '-');
   const targetPath = path.join(basePath, formattedName);
   if (!fs.existsSync(targetPath)) {
     fs.mkdirSync(targetPath);
